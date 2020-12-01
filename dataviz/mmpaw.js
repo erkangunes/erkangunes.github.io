@@ -22,7 +22,7 @@ function setup() {
   canvas.parent('mysketch');
   smooth(8);
 
-  countrySelect = createSelect();
+  var countrySelect = createSelect();
   countrySelect.position(windowWidth*0.026, windowHeight*0.93);
   countrySelect.parent('mysketch');
   countryOptions = protestVolume.getColumn('country');
