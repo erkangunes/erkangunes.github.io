@@ -23,7 +23,7 @@ function setup() {
   smooth(8);
 
   var countrySelect = createSelect();
-  countrySelect.position(windowWidth*0.526, windowHeight*0.95);
+  countrySelect.position(windowWidth*0.51, windowHeight*0.98);
   countrySelect.parent('mysketch');
   countryOptions = protestVolume.getColumn('country');
   uniqueItems = Array.from(new Set(countryOptions));
