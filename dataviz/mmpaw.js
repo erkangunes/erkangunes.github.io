@@ -24,6 +24,7 @@ function setup() {
 
   countrySelect = createSelect();
   countrySelect.position(windowWidth*0.026, windowHeight*0.93);
+  countrySelect.parent('mysketch');
   countryOptions = protestVolume.getColumn('country');
   uniqueItems = Array.from(new Set(countryOptions));
   uniqueItems = uniqueItems.sort();
