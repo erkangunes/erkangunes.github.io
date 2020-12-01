@@ -19,7 +19,7 @@ function preload() {
 
 function setup() {
   var canvas = createCanvas(windowWidth/2,windowHeight/2);
-  canvas.parent('content');
+  canvas.parent('mysketch');
   smooth(8);
 
   countrySelect = createSelect();
