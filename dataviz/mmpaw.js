@@ -19,7 +19,7 @@ function preload() {
 
 function setup() {
   var canvas = createCanvas(windowWidth/2,windowHeight/2);
-  canvas.parent('myContainer');
+  canvas.parent('content');
   smooth(8);
 
   countrySelect = createSelect();
