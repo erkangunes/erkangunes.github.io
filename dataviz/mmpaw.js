@@ -11,8 +11,8 @@ var countryName = "the World"
 let countryIndex = 0;
 
 //var canvasDiv = document.getElementById("mysketch")
-//var width = windowWidth*0.6;
-//var height = windowWidth*0.6;
+var width = windowWidth*0.6;
+var height = windowWidth*0.6;
 
 function preload() {
  protestVolume = loadTable("data/protest.country.year.month.csv", "csv" ,"header");
@@ -22,7 +22,7 @@ function preload() {
 
 function setup() {
   //var canvas = createCanvas(width*5,height*5);
-  var canvas = createCanvas(windowWidth,windowHeight);
+  var canvas = createCanvas(width,height);
   canvas.parent('mmpaw');
   smooth(8);
 
