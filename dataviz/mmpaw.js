@@ -12,7 +12,7 @@ let countryIndex = 0;
 
 var canvasDiv = document.getElementById("mysketch")
 var width = canvasDiv.offsetWidth;
-
+var height = canvasDiv.offsetHeight;
 function preload() {
  protestVolume = loadTable("data/protest.country.year.month.csv", "csv" ,"header");
 
@@ -20,7 +20,7 @@ function preload() {
 }
 
 function setup() {
-  var canvas = createCanvas(width*5,windowHeight);
+  var canvas = createCanvas(width*5,height*5);
   canvas.parent('mysketch');
   smooth(8);
 
