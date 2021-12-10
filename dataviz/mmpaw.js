@@ -22,7 +22,7 @@ function preload() {
 
 function setup() {
   //var canvas = createCanvas(width*5,height*5);
-  var canvas = createCanvas(windowWidth,windowHeight);
+  var canvas = createCanvas(windowWidth*0.7,windowHeight*0.7);
   canvas.parent('mmpaw');
   smooth(8);
 
