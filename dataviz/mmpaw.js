@@ -10,9 +10,6 @@ var maxProtest = 110;
 var countryName = "the World"
 let countryIndex = 0;
 
-//var canvasDiv = document.getElementById("mysketch")
-//var width = canvasDiv.offsetWidth;
-//var height = canvasDiv.offsetHeight;
 
 function preload() {
  protestVolume = loadTable("data/protest.country.year.month.csv", "csv" ,"header");
@@ -21,14 +18,13 @@ function preload() {
 }
 
 function setup() {
-  //var canvas = createCanvas(width*5,height*5);
-  var canvas = createCanvas(windowWidth*0.6,windowHeight*0.6);
-  canvas.parent('mmpaw');
+  var canvas = createCanvas(windowWidth,windowHeight);
+  canvas.parent('mysketch');
   smooth(8);
 
   countrySelect = createSelect();
   countrySelect.position(windowWidth*0.51, windowHeight*0.98);
-  countrySelect.parent('mmpaw');
+  countrySelect.parent('mysketch');
   countryOptions = protestVolume.getColumn('country');
   uniqueItems = Array.from(new Set(countryOptions));
   uniqueItems = uniqueItems.sort();
