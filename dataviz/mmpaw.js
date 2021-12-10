@@ -10,9 +10,10 @@ var maxProtest = 110;
 var countryName = "the World"
 let countryIndex = 0;
 
-var canvasDiv = document.getElementById("mysketch")
-var width = canvasDiv.offsetWidth;
-var height = canvasDiv.offsetHeight;
+//var canvasDiv = document.getElementById("mysketch")
+//var width = canvasDiv.offsetWidth;
+//var height = canvasDiv.offsetHeight;
+
 function preload() {
  protestVolume = loadTable("data/protest.country.year.month.csv", "csv" ,"header");
 
@@ -20,7 +21,8 @@ function preload() {
 }
 
 function setup() {
-  var canvas = createCanvas(width*5,height*5);
+  //var canvas = createCanvas(width*5,height*5);
+  var canvas = createCanvas(1600,900)
   canvas.parent('mysketch');
   smooth(8);
 
