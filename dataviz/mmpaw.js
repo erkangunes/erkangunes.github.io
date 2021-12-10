@@ -20,7 +20,7 @@ function preload() {
 }
 
 function setup() {
-  var canvas = createCanvas(width,windowHeight);
+  var canvas = createCanvas(width*5,windowHeight);
   canvas.parent('mysketch');
   smooth(8);
 
